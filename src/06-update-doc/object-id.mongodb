@@ -1,0 +1,13 @@
+use("effortstack_store")
+
+db.products.updateOne(
+//Query
+{_id: ObjectId("2asdfa")},
+//Cambios => operators
+{
+  $set:{
+    name:'Producto 2 Update'
+  }
+})
+
+db.products.find()

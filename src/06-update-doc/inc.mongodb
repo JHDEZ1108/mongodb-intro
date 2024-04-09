@@ -1,0 +1,13 @@
+use("effortstack_store")
+
+db.products.updateOne(
+//Query
+{_id:2},
+//Cambios => operators
+{
+  $inc:{
+    price: 2
+  }
+})
+
+db.products.find()

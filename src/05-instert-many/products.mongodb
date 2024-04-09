@@ -1,0 +1,35 @@
+use("effortstack_store")
+
+db.products.drop()
+
+db.products.insertMany([
+  {
+    _id: 1,
+    name: "Product 1",
+    price: 15
+  },
+  {
+    _id: 2,
+    name: "Product 2",
+    price: 153
+  },
+  {
+    _id: 3,
+    name: "Product 3",
+    price: 455
+  },
+  {
+    _id: 4,
+    name: "Product 4",
+    price: 243
+  },
+  {
+    _id: 5,
+    name: "Product 5",
+    price: 134
+  },
+], {
+  ordered: false
+})
+
+db.products.find()

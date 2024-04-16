@@ -1,0 +1,24 @@
+use("effortstack_store")
+
+db.createCollection('users', {
+  validator: {
+    $jsonSchema: {
+      bsonType: 'object',
+      required:['name', 'email', 'password'],
+      properties: {
+        name: {
+          bsonType: 'string'
+        },
+        last_name: {
+          bsonType: 'string'
+        },
+        email: {
+          bsonType: 'string'
+        },
+        password:{
+          bsonType: 'string'
+        }
+      }
+    }
+  }
+})

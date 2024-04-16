@@ -1,0 +1,6 @@
+use("effortstack_store")
+
+db.users.find()
+
+
+

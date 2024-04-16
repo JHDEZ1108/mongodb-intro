@@ -1,0 +1,7 @@
+use("effortstack_store")
+
+db.users.insertOne({
+  namw: "Josué",
+  last_name: "Hernández",
+  email: "joheca1998@gmail.com"
+})
